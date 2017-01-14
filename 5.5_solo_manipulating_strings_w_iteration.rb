@@ -1,10 +1,12 @@
 # 5.5 Solo Challenge: Manipulating Strings with Iteration
 
-spy_hash = {
-    true_name: nil,
-    encrypted_name: nil
+# spy_hash = {
+#     true_name: nil,
+#     encrypted_name: nil
+#
+# }
 
-}
+spy_hash = {}
 
 def name_encryptor(spy_hash)
 
@@ -42,8 +44,22 @@ def name_encryptor(spy_hash)
     sur_name_encrypted = split_encrypted[2].capitalize unless split_encrypted[2] == nil
 
     swapped_encrypted_full_name = "#{sur_name_encrypted} #{mid_name_encrypted} #{giv_name_encrypted}"
-    spy_hash[:true_name] = capitalize_original
-    spy_hash[:encrypted_name] = swapped_encrypted_full_name
+
+    # spy_hash[:true_name] = capitalize_original
+    # spy_hash[:encrypted_name] = swapped_encrypted_full_name
+
+
+    spy_hash.store(capitalize_original, swapped_encrypted_full_name)
+
+
+    # fname = split_name[0]
+    # lname = split_name[1]
+    # test_hash.store(fname, lname)
+
+
+
+
+
 
     # testing version to hash
 
@@ -88,8 +104,17 @@ def name_encryptor_results(spy_hash)
 
         puts "==== Names Encrypted: ===="
         puts "------------------------------"
-        puts "Original Name: #{spy_hash[:true_name]}"
-        puts "Encrypted Name: #{spy_hash[:encrypted_name]}"
+        # puts "Original Name: #{spy_hash[:true_name]}"
+        # puts "Encrypted Name: #{spy_hash[:encrypted_name]}"
+
+
+        spy_hash.each{|key, value|
+            puts "-----------------------------"
+            puts "Input Name: #{key}"
+            puts "Encoded Name: #{value}"
+        }
+
+
         puts "------------------------------"
 
         # puts
@@ -135,34 +160,34 @@ name_encryptor(spy_hash)
 
 
 # Loop - Step 2: .store method
-test_hash = {}
-
-def core(test_hash)
-    puts "Enter New Name"
-    answer = gets.chomp
-    split_name = answer.split(" ")
-    fname = split_name[0]
-    lname = split_name[1]
-    test_hash.store(fname, lname)
-    # puts test_hash
-    choice(test_hash)
-end
-
-def choice(test_hash)
-    puts "Enter [a] to add more names, or [r] for results."
-    answer = gets.chomp
-    if answer == "a"
-        core(test_hash)
-    elsif answer == "r"
-        results(test_hash)
-    else
-        "Enter [a] to add more names, or [r] for results."
-    end
-end
-
-
-def results(test_hash)
-    puts test_hash
-end
-
-core(test_hash)
+# test_hash = {}
+#
+# def core(test_hash)
+#     puts "Enter New Name"
+#     answer = gets.chomp
+#     split_name = answer.split(" ")
+#     fname = split_name[0]
+#     lname = split_name[1]
+#     test_hash.store(fname, lname)
+#     # puts test_hash
+#     choice(test_hash)
+# end
+#
+# def choice(test_hash)
+#     puts "Enter [a] to add more names, or [r] for results."
+#     answer = gets.chomp
+#     if answer == "a"
+#         core(test_hash)
+#     elsif answer == "r"
+#         results(test_hash)
+#     else
+#         "Enter [a] to add more names, or [r] for results."
+#     end
+# end
+#
+#
+# def results(test_hash)
+#     puts test_hash
+# end
+#
+# core(test_hash)
