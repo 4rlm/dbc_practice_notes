@@ -1,0 +1,31 @@
+Data Structures
+1. Why are data structures useful in programming?
+Answer: Data structures are ways of storing and accessing data, such as an array or a hash.  They are useful in programming, because if you are manipulating data, it needs to be stored somewhere.  Even if you are exporting to a csv or database, often times the manipulated data needs to be stored in memory to complete the next process in the program, or it could be used to store, format and prepare the data before exporting.  Also, helpful when importing data into the program.s
+
+Arrays
+2. Define "array" and describe the characteristics of an array.
+Answer: An Array is a simpler way of storing data (vs hash).  It is simply data separated by a comma.  There can also be arrays in arrays or hashes in arrays or arrays in hashes.  Arrays are indexed and the first item starts at index 0 and upwards vs hashes which are key-value pairs.
+
+3. Give two original examples of data sets that an array might be well-suited for.
+Answer: Arrays can be useful when you want to access items by index number when ordering is important.  Another time arrays are more useful is when you want to store multiple hashes.
+
+Hashes
+4. Define "hash" and describe the characteristics of a hash.
+Answer: A hash is a more complex way of storing data (vs array).  Hashes store data in a key-value pair, vs Arrays which are indexed by item order number.  You can access the key or the value by referencing the inverse, so get the key by entering the value and get the value by entering the key.
+
+5. Give two original examples of data sets that a hash might be well-suited for.
+Answer:  It's more suitable to use a hash when each data has a unique key and value set.  So two examples of this are when accessing columns in a table which each have a unique header name.  Another time they can be useful is when you have a detailed list where each item is unique, such as tracking how many pencils, books, erasers, etc.
+
+Iteration
+6. Why is iteration useful?
+Answer:  Iteration is useful because it allows us to repeat an action until a specified condition has ben met.  Without this ability, each repetitive task would need to be conducted manually each time.
+
+7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+Answer: Stapling packets of brochures together to prepare for distribution would be a good example of something that iteration could be useful for.  For example, if you had to staple 3 pieces of paper together to make 100 packets.
+
+Blocks
+8. What is a block?
+Answer: A block is a piece of code.  It is usually defined by a line or multiple lines of code which work together to accomplish a goal.  The block can often be referenced in other areas of the program or even used multiple times if needed, such as if iterating a block of code.
+
+9. What is a block parameter, and where does its value come from?
+Answer: An example of a block parameter is: jobs.each{|job| puts job}.  The "job" is a block parameter.  It could be named anything, such as "x" or "y" or "happy", but is recommended to name it something that is fitting for its purpose to increase the code's readability.
