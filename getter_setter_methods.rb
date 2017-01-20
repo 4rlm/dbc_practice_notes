@@ -9,9 +9,13 @@ class Santa
         @gender = gender
         @ethnicity = ethnicity
         @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-        @age = 0
+        # @age = 0
+        @age = rand(0..140)
         puts "Initializing Santa instance ..."
     end
+
+    # Replaces Getter and Setter Methods below.
+    attr_accessor :gender, :ethnicity, :age
 
     # Instance Method 1 #
     def speak
@@ -24,36 +28,41 @@ class Santa
         puts "That was a good #{cookie}!"
     end
 
-    ## Setter Method for Attributes ##
+    ## Method to Change Attributes ##
     def celebrate_birthday
         @age += 1
     end
 
-    ## Setter Method for Attributes ##
+    ## Method to Change Attributes ##
     def get_mad_at(reindeer_name)
         @reindeer_ranking.delete(reindeer_name)
         @reindeer_ranking << reindeer_name
     end
 
     ## Setter Method for Attributes ##
-    def gender=(user_input)
-        @gender = user_input
-    end
+    # Replaced by ' attr_accessor :gender, :ethnicity, :age ' above. #
+    # def gender=(user_input)
+    #     @gender = user_input
+    # end
 
     ## Getter Method for Attributes ##
-    def age
-        @age
-    end
+    # Replaced by ' attr_accessor :gender, :ethnicity, :age ' above. #
+    # def age
+    #     @age
+    # end
 
     ## Getter Method for Attributes ##
-    def ethnicity
-        @ethnicity
-    end
+    # Replaced by ' attr_accessor :gender, :ethnicity, :age ' above. #
+    # def ethnicity
+    #     @ethnicity
+    # end
 
     ## Getter Method for Attributes ##
-    def gender
-        @gender
-    end
+    # Replaced by ' attr_accessor :gender, :ethnicity, :age ' above. #
+    # def gender
+    #     @gender
+    # end
+
 end
 
 
@@ -89,9 +98,12 @@ end
 # (3) DRIVER CODE: Advanced ##
 santas = []
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
+
+# example_genders.length.times do |i|
+100.times do
+  santas << Santa.new(example_genders.sample, example_ethnicities.sample)
 end
 
 santas.each do |santa|
@@ -100,7 +112,8 @@ santas.each do |santa|
     santa.speak
     santa.eat_milk_and_cookies("chocolate chip cookie")
     santa.celebrate_birthday
-    santa.gender = 'male'
+    # santa.gender = 'male'
+    santa.gender = example_genders.sample
     santa.get_mad_at('Dasher')
     santa.ethnicity
     puts "--------------------------"
@@ -227,6 +240,8 @@ puts "#{reindeer.name} is in #{reindeer.location}."
 # Syntactic Sugar for Setter: attr_accessor
 ##############
 
+=begin
+
 class Reindeer
     # Anytime you need to provide access to instance variables and attributes outside of a class, use attr_reader, attr_writer, or attr_accessor .
     # Syntactic Sugar for Getter: ' attr_reader : '
@@ -282,7 +297,7 @@ reindeer.land("Cape Town")
 reindeer.name = "The reindeer Formerly Known as Dasher."
 puts "#{reindeer.name} is in #{reindeer.location}."
 
-
+=end
 #############################
 
 
