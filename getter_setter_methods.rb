@@ -119,7 +119,7 @@ end
 
 
 ##############
-## VIDEO 1: Reindeer
+## VIDEO 1: Instance Methods, Instance Methods (Reindeer)
 ##############
 
 # Our reindeer needs state:
@@ -170,7 +170,7 @@ reindeer.about
 
 
 ##############
-## VIDEO 2-3: Reindeer
+## VIDEO 2-3: Getter & Setter Methods (Reindeer)
 ##############
 
 # Need to make interface to make data available to outside of class.
@@ -221,13 +221,77 @@ puts "#{reindeer.name} is in #{reindeer.location}."
 #############################
 
 
+##############
+## VIDEO 4: Refactor with attr_reader and attr_accessor (Reindeer)
+# Syntactic Sugar for Getter: attr_reader
+# Syntactic Sugar for Setter: attr_accessor
+##############
+
+class Reindeer
+    # Anytime you need to provide access to instance variables and attributes outside of a class, use attr_reader, attr_writer, or attr_accessor .
+    # Syntactic Sugar for Getter: ' attr_reader : '
+    # Use symbols ':' for name of attributes we want to make readable.
+    # Declaration basically says, "Write me a getter method for 'name' and 'location' attributes."
+    # Ruby declares the methods for us.  Also good for programmers to see at top what attributes are readable, writable, or accessible.
+
+    # ' attr_reader :name, :location '  for READ ONLY.
+    # ' attr_writer :name, :location '  for WRITE ONLY (rarely used).
+    # ' attr_accessor :name, :location '  for READ & WRITE.
+
+    attr_accessor :name, :location
+
+    def initialize(name)
+        @name = name
+        @location = "the North Pole"
+    end
+
+    ## Getter Method for Attributes ##
+    ## Replaced by attr_accessor :name, :location ##
+    # def name
+    #     @name
+    # end
+
+    ## Getter Method for Attributes ##
+    ## Replaced by attr_accessor :name, :location ##
+    # def location
+    #     @location
+    # end
+
+    ## Setter Method for Attributes ##
+    ## Replaced by attr_accessor :name, :location ##
+    # def name=(new_name)
+    #     @name = new_name
+    # end
+
+    def take_off(altitude)
+        puts "#{@name} took off."
+        puts "#{@name} ascended to #{altitude} feet."
+    end
+
+    def land(location)
+        puts "Landed safely in #{location}."
+        @location = location
+    end
+
+end
+
+reindeer = Reindeer.new("Dasher")
+puts "#{reindeer.name} is in #{reindeer.location}."
+reindeer.take_off(3000)
+reindeer.land("Cape Town")
+reindeer.name = "The reindeer Formerly Known as Dasher."
+puts "#{reindeer.name} is in #{reindeer.location}."
+
+
+#############################
 
 
 
 
 #############################
-## IMPORTANT!!!!!
+## !!! IMPORTANT !!! ##
 #############################
+
 #We're making an empty array, and then adding a lot of Santa instances to it. (If we wanted to interact with the Santas, we would need to loop through the array and call methods on each one. If you're not sure how this works, here's some sample code (Links to an external site.) to play with.)
 
 =begin
