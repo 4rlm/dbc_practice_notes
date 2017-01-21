@@ -4,6 +4,8 @@
 
 # Releases 0-4 #
 #############################
+=begin
+
 class Santa
     def initialize(gender, ethnicity)
         @gender = gender
@@ -122,6 +124,7 @@ santas.each do |santa|
     puts
 end
 
+=end
 #############################
 
 
@@ -309,7 +312,7 @@ puts "#{reindeer.name} is in #{reindeer.location}."
 
 #We're making an empty array, and then adding a lot of Santa instances to it. (If we wanted to interact with the Santas, we would need to loop through the array and call methods on each one. If you're not sure how this works, here's some sample code (Links to an external site.) to play with.)
 
-=begin
+
 class Puppy
     def initialize(name)
         @name = name
@@ -335,5 +338,5 @@ puts "Testing each Puppy instance in the array to make sure it can bark..."
 puppies.each do |puppy|
     puppy.bark
 end
-=end
+
 #############################
