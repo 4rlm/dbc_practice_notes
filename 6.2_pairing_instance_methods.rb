@@ -1,8 +1,11 @@
 ## 6.2 Mandatory Pairing: Instance Methods ##
 
 # Release 0: Add Behavior to a Class #
+############################
+puts "#{"="*30}"
+############################
 
-=begin
+
 class Puppy
 
     # Add a method to your Puppy class named initialize. It should print "Initializing new puppy instance ..." (R1.1) #
@@ -50,7 +53,7 @@ puts spot.roll_over # instance can now "*rolls over*". (R0.3) #
 puts spot.dog_years(10) # instance can now convert human years to dog years. (R0.4) #
 puts spot.sit # instance can now "*sit*". (R0.5) #
 
-=end
+
 #####################
 
 # Release 1: Declare an Initialize Method #
@@ -59,6 +62,9 @@ puts spot.sit # instance can now "*sit*". (R0.5) #
 
 #####################
 
+############################
+puts "#{"="*30}"
+############################
 
 
 ####################

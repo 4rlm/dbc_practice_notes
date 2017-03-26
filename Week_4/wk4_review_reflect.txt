@@ -1,0 +1,50 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+A variable is a way to store a value to be used later in the program.  It is helpful to use for a few reasons, such as the fact that the result of long pieces of code can be stored in the variable to be used again, which makes the code shorter and more concise by not having to rewrite the entire code again each time.  Also, it can be less taxing on the program to not have to run the entire code all over again when it need to get that result each time.  If the value of the variable has not changed since the last time it was used, it can be used directly again.
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+ruby will first look to full_name, then get the value of first_name and combine it with the value from last_name, then store that combined value in full_name to be used later when needed.
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+string: this type is for words or non-integers and non-boolean.  Examples are: "hello", "yes", (and even numbers if surrounded with quotes - but it's important to note that they will not be recognized as integers by ruby unless they are converted to a fixnum using .to_i, ex: "4".to_i ).
+integer: this type is for numbers.  Examples are: 1,2,3,4,5
+float: this type is for a decimal value of a number.  Examples are: 4.0, 5.2, 0.09
+nil: this type is for variables which do not have a value.  Examples are: name = nil
+boolean: this type is for true/false.  Examples are: happy = true
+
+
+Algorithms
+4. What is an algorithm?
+An algorithm is a step-by-step process of how to accomplish a goal or procedure.  It is similar to a recipe, manual, or how-to.
+
+5. What are two common categories of algorithm in computer science?
+Common categories of algorithms in computer science are merge, sort, order.
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+A method is similar to a function in many other languages.  It is a way to package a block of code to be called when needed.  It is a nice way of segmenting code to only be called or used when needed.  It is also a convenient way to segment portions of the program into smaller chunks of code to be used later.  You can also have nested methods, where you call a method inside of another.  However, you can not define a new method inside the definition of another method, but can call that other method inside the definition of your other method.
+
+7. Define the following terms as they relate to a method.
+
+return value: this is the value of the method after it has been called.  this allows the value to be accessed in other parts of the code.  To see the value, you could also p or puts it, but return allows you to use the value, without having to display it.
+side effect: side effect is when a method changes the value of the method it is being called upon.  In most cases in ruby, you would need to use the bang operator (!) to permanantley change that value, otherwise it will reset to its orginal value after being processed.
+parameter: this is what the method is expecting to use or access inside of it.
+argument: this matches parameter and is defining what the method should expect to find in the parameters to bring inside to run itself.  The number of items or inputs in the argument and parameters must match.
+implicit return: this is the most recent return value of a method.
+
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?  Global scope means the variables can be accessed inside and outside of the methods.  Method scope means the variables can only be accessed inside of the methods.  Also called global variables and local variables.
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+Control flow is the order in which certain statements or block is executed inside the program.  Programmers choose to use flow control to ensure their programs run efficiently.
+
+10. Define the following terms as they relate to flow control.
+
+loop: loops or repeats an action for a predetermined number of times then stops.
+if: only executes or performs an action if it meets the stated conditions.
+else: executes the action if it doesn't meet the specifications in the "if".
+elsif: this is similar to else, but is used between the two.  it lets the program know that if the "if" conditions are not met, and the "elsif" conditions are not met, then continue to the next one below me.
+while: this is a loop which runs as long as or "while" the conditions are still valid, otherwise it does not run or stops running after met.
+until: this will execute code until a condition is met.

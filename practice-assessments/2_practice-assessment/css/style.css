@@ -1,0 +1,248 @@
+html, body {
+    height: 88%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 1.5;
+    color: #383030;
+}
+
+
+nav {
+    position: fixed;
+    width: auto;
+    width: 100%;
+    margin-top: -38px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#757474, #585858);
+    display: block;
+    width: 100%;
+    position: fixed;
+}
+
+nav .active {
+    background-image: linear-gradient(#585858, #757474);
+    color: white;
+}
+
+nav li {
+    text-align: center;
+    float: left;
+    width: 33.2%;
+    font-weight: bold;
+    border-right: 1px solid #918e8e;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-image: linear-gradient(#585858, #757474);
+    color: #eaf8ff;
+}
+/* == navigation ends == */
+
+
+.container {
+    margin: auto;
+    width: 98%;
+    min-height: 100%;
+    margin-top: 38px;
+    /*margin-bottom: -30px;*/
+}
+
+
+/* == greeting section starts == */
+.greeting {
+    text-align: center;
+    background-image: linear-gradient(#ddead0, #cbe0b8);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.greeting h1, .greeting h3 {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+}
+/* == greeting section ends == */
+
+
+/*index table starts*/
+
+#index-table-1 {
+     border-collapse: collapse;
+     border: 1px solid #558C89;
+
+     box-shadow: 3px 3px 3px grey;
+     border-bottom: 1px solid #015b7c;
+     width: 80%;
+     margin: auto;
+     margin-bottom: 50px;
+     padding: 8px;
+     margin-top: 10px;
+
+     text-align: center;
+ }
+
+#index-table-1 tr:first-child th {
+    background-image: linear-gradient(#757474, #585858);
+     color: white;
+     box-shadow: 3px 3px 3px grey;
+     border-bottom: 1px solid #015b7c;
+ }
+
+ #index-table-1 th, #ndex-table-1 td {
+     padding: 15px;
+     text-align: center;
+ }
+
+ #index-table-1 th {
+     background-color: #558C89;
+     color: white;
+ }
+
+#index-table-1 td {
+    border: 1px solid #585858;
+    vertical-align: bottom;
+    height: 40px;
+}
+
+#index-table-1 tr:hover {
+    background-color: #ffeab2
+}
+
+#index-table-1 tr:nth-child(even) {
+    background-color: #d1cfcf;
+}
+
+/*index table ends*/
+
+ /*Section starts*/
+section {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.list-header {
+    background-image: linear-gradient(#8c8989, #585858);
+    padding: 8px;
+    border-radius: 10px 10px 0 0;
+    margin-top: -6px;
+    color: white;
+    text-align: center;
+}
+
+.details.left-list, .details.right-list {
+    min-height: 390px;
+}
+
+.contact.left-list, .contact.right-list {
+    min-height: 250px;
+}
+
+.left-list, .right-list {
+    float: left;
+    width: 48%;
+    margin-top: 12px;
+    border: 1px solid #8c8989;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+
+.left-list p, .right-list p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.left-list {
+    margin-right: 1%;
+}
+
+.right-list {
+    margin-left: 1%;
+}
+
+
+/*contact page starts*/
+
+.form-container {
+    width: 100%;
+    margin-top: 70px;
+    clear: both;
+}
+
+.article-submit-form {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form-header {
+    float: left;
+    width: 100%;
+    background-image: linear-gradient(#8c8989, #585858);
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+    color: #558C89;
+    margin-top: 10px;
+}
+
+.article-submit-form input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #bbd1cf;
+    border-radius: 4px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 350px;
+    width: 99%;
+    resize: none;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #558C89;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+/*contact page ends*/

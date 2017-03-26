@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    background-color: yellow;
+}
+
+.column-1 {
+    width: 48%;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.column-2 {
+    width: 48%;
+    background-color: red;
+    display: inline-block;
+    vertical-align: top;
+}
+
+1. feeback cycles - quick as possible.
+2. rather than writing large blocks of code, do it in bits then check to make sure it works.
+3. css: calc.
+calc(80% - 20px)
+
+4. 
+vh, vw
+viewport height
+viewport width
+
+5. 
+box-sizing: border-box
+display: inline-block;
+vertical-align: top;
+
+edge cases
+
+capybara
+watir
+nokogiri
+
+
+   

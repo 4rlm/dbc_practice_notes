@@ -1,0 +1,65 @@
+===================
+I. Navigate Sublime
+===================
+cmd+p: Search Docs
+cmd+T: Smart Search
+cmd+k,B: Close / Open Side Bar
+^cmd+p: See All Commands
+cmd+, : Preferences/User (then, enter below:)
+    "save_on_focus_lost": true
+    "spell_check": true,
+    "translate_tabs_to_spaces": true,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
+
+===================
+II. Navigate Sublime
+===================
+cmd+f: search for text in file.
+^cmd+f: search and replace text in file.
+cmd+d: Multiple Selection
+cmd+mouse: Multiple Cursor Input
+esc: remove all cursors.
+cmd^D: Copy Line
+ctrl+cmd^:  Move Line
+
+===================
+III. Syntax Highlighting, Tab Complete, and Snippets
+===================
+
+Syntax Highlighting
+Code Snippets
+Tab Completion
+Create Snippet
+
+===================
+IV. 1. Markdown
+===================
+
+Headers: 
+Use one or more # symbols to create a header. 
+A # Header is larger than a ## Header.
+
+Lists:
+Use a * to create an unordered list element.
+Use a number followed by a period 1. to create an ordered list. 
+
+Bold
+Use ** Bold Text ** to create emphasis. 
+
+Code
+Use 4 spaces indent or surround with single or triple ` (backticks) to create a code block. 
+In GitHub you can add the code type as well. 
+
+Links
+Use [Link Text](link url) format to create links.
+
+
+===================
+
+
+
+
+
+
+

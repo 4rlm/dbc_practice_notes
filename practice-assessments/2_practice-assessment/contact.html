@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Article Submit</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <div class="greeting">
+                <h1>Submit Your Travel Story</h1>
+                <h3>Let me know about your travel stories!</h3>
+            </div>
+
+            <section class="destinations">
+
+                <div class="contact left-list">
+                    <h3 class="list-header">Something to Share?</h3>
+                    <p>Please reach out with questions or stories about . . .</p>
+                    <ol>
+                        <li>Best Travel Experiences</li>
+                        <li>Funny Travel Experiences</li>
+                        <li>Things that didn't turn out the way you expected them to.</li>
+                        <li>Best Travel Deals</li>
+                        <li>Cultural Tips</li>
+                    </ol>
+
+                </div>
+
+                <div class="contact right-list">
+                    <h3 class="list-header">Criteria</h3>
+                    <p>To post your story, please follow the guidelines . . .</p>
+                    <ol>
+                        <li>Be respectful of other cultures, races, religions, and languages, ....etc.</li>
+                        <li>Try to keep the stories upbeat and positive.  Even if they are not as such, try to at least point out a few good experiences to have a balanced story.</li>
+                        <li>Between 500-1,000 characters.</li>
+                        <li>Submitted by End of Business Week to be considered for next week's postings.</li>
+                    </ol>
+            </section>
+
+
+            <div class="form-container">
+
+            <form class="article-submit-form" action="success.html" method="post">
+
+                <div class="form-header">
+                    <h3>Submit Your Story or Article to Win a Prize!</h3>
+                </div>
+
+                <fieldset>
+
+                <div>
+                  <label for="firstname">First Name:</label>
+                  <input type="text" name="firstname">
+                </div>
+
+                  <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname">
+                  </div>
+
+                  <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+                  </div>
+
+                  <div>
+                      <label for="phone">Phone</label>
+                      <input type="tel" name="tel">
+                  </div>
+
+                  <div>
+                      <label for="radio">Prefered Method to Contact</label>
+                      <input type="radio" name="phone" value="phone">Phone
+                      <input type="radio" name="email" value="email">Email
+                  </div>
+
+                </fieldset>
+
+                <fieldset>
+                  <div>
+                    <label for="topic">Topic:</label>
+                    <input type="text" name="topic" placeholder="Topic of Story">
+                  </div>
+
+                  <div>
+                      <label for="story">Story / Article Contents</label> <br>
+                      <textarea name="name"></textarea>
+                  </div>
+
+                </fieldset>
+
+                <button type="submit">Submit Article</button>
+            </form>
+        </div>
+        </div>
+        <br>
+    </body>
+</html>

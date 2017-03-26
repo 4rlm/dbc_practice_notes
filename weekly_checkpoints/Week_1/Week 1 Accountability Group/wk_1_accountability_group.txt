@@ -1,0 +1,18 @@
+1) What have you found most frustrating this week?
+What I found to be most frustrating this week is finding the proper balance for completing both the DBC and my professional work tasks thoroughly and on time.  I recently transitioned from sales to programming at my current employer and have been tasked with developing a difficult project.  My wife is a software engineer and she is on the project development team for my company's project, so we can work on it together, but there are many things I'm learning for the first time on that project and it requires over 70 hours per week; mostly because I'm still clumsy and it takes me longer.  We have a big deadline on Monday 12/12, where a few modules need to be presented to the management team, so I feel overwhelmed.  But I'm very excited about the challenge and I recognize that it is a really great opportunity.
+
+On thing I found especially challenging this week in the DBC course, was moving files in the command line; especially from inside a sibling directory to another sibling directory.  I never thought about doing this before and it took me a while to get comfortable with it, but I can see how this will certainly increase my efficiency.
+
+2) Which concepts did you find most interesting?
+I like all the concepts very much.  I enrolled in this course b/c I want to ensure that I don't miss any important foundational steps and now that I am coding full time at work I appreciate having the ability to learn how to be more efficient and productive while saving time!!!
+
+I appreciated the deeper dive into the command line than what I typically use it for and I needed to deeper dive into github, too.  I only started using it recently, because it was difficult to share and backup multiple versions of a project. I often experiment with a lot of new things on my work project, which often go really bad, so it's great being able to rollback the code to an earlier save point to start over.
+
+3) How can your group help you stay accountable?
+My biggest fear is missing an assignment not due to a lack of interest or motivation, but by simply overlooking the project requirements or number of tasks required.  I don't think it's other people's responsibility to remind me though.  They have their own stresses and deadlines they need to worry about.  So in terms of accountability, I'm not looking toward the team for that.  I'm looking toward the team to be able to share new perspectives, experience, and knowledge.  I'm excited to see when we start working on bigger projects which we get emotionally invested in, how we will resolve our conflicting perspectives on the future direction of the project.  I suppose that could be a big problem for many teams and I want to get experience in that, because I typically get really passionate about professional projects and I expect many in this school are the same.  I hope we can resolve them productively without any conflict, hurt feelings, or misunderstandings.
+
+4) What city, state do you currently live in?
+I live in Naperville, IL, which is a west suburban Chicago.
+
+5) What is your preferred way of connecting with the group each week? (discussion thread only, additional hangout, etc.)
+I don't have a preferred method, but I generally like to keep things as consolidated as possible, so hopefully we can communicate via one of the main channels recommended and most commonly used by the DBC mentors, such as slack.

@@ -1,0 +1,20 @@
+
+Week 3: Review and Reflect
+
+1. Name at least three categories of CSS adjustments (example: colors)?
+color, backgtound and borders, basic box, flexible box, text, text decoration, fonts, writing models, table, list and counters, animation, transform, transition, basic user interface, multi-column, paged media, etc.
+
+2. What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+external style sheet, internal style sheet, inline style.  Anyone of the 3 could be the best depending on the requirements.  If it is a really small, simple adjustment then inline could be fine; but only when there isn't already another style sheet rule in the project.  If it is going to be slightly longer, then perhaps and internal stye sheet could be fine.  In most cases, I prefer to use an external style sheet because I rarely find myself only making small adjustments.  I usually make a lot.  It's also nice to see all those rules in one place, rather than having to look for them hiding in various locations of the file structure in tags.  Finally, it makes your code more manageable and shorter.  Sometimes code can get very long and complicated, so segmenting or refactoring can be helpful in making sense of it all.
+
+3. What is a selector? Give examples of at least three types of selectors.
+A selector is the pattern used to select elements you want to style.  There are many of them!  I tend to like using id and class most often, because it gives me a lot of flexibility.  You can also use * to target everything in the project.  You can also select an element, like `p` or elements of an element like `div p` or element children of an element like `div > p`.  We can even select attributes, like `target =_blank` or pseudoselectors like `a:active`.  Those would be the most common methods.
+
+4. What is the box model?
+All HTML elements can be thought of as boxes, which comprise of (in order from inside out) the actual content, padding, border, and margin.  It might not always be clear as to how much space is being taken in each, so there are a few ways to determine this.  One is to use `* {border: 1px solid red;}` at the top of your css file.  Another is to simply declare in the html or body how much margin and spacing should be used as the default for all elements, like `html, body {margin: 5px; padding: 5px;}`.  There can be drawbacks of this, so it is not suitable for all situations, but it can be an option.  Another way is to inspect the page with google chrome `inspect` where you can hover over each element and determine how much much space (% or pixels) each is taking.
+
+5. Explain and give an example of the cascading effect of CSS.
+The cascading effects of CSS is simply the fact that we can have multiple layers of style on top of each other.  An example of this, is that I might create a basic style sheet for a document.  But then I can create additional style sheets which make further changes on the original html elements/layout.  When there is a conflict, the most recent rule will be dominant.  For example, the rule written lowest on the css style sheet will override previous rules written above it.  If there are multiple style sheets, then the stylesheet linked last will be dominant when resolving conflict.
+
+6. Name two CSS techniques that assist in responsive design.
+Media queries `@media ...` and `max-` or `min-`, such as `max-width` and `min-height`.  Using several of these for different dimensions of viewports will allow the flexibility to be responsive, or respond to the viewport dimensions.

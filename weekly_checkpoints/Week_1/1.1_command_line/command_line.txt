@@ -1,0 +1,53 @@
+mkdir
+cd
+pwd
+ls
+cd ..
+touch
+mv
+cp
+rm
+rmdir
+rm -r
+man rm
+
+==============================
+Search
+==============================
+. for current dir
+~/ for entire dir
+find . -name practice.html
+find . -name *.jpg
+grep “hello” myfile.md
+grep -r “hello”
+
+==============================
+Move Files Between Directories:
+==============================
+From parent dir move file between child dir: 
+AJB:house Adam$ mv bedroom_2/person bedroom_1/person
+- - - - - -
+Move file from sibling dir to current dir:
+AJB:bathroom Adam$ mv ../kitchen/sink ./sink
+- - - - - -
+Move file from current dir to sibling dir:
+AJB:bedroom_1 Adam$ mv ./bed ../bedroom_2/bed
+
+Move file from parent dir to current dir:
+AJB:living_room Adam$ mv ../rug ./rug
+- - - - - -
+Move file from child dir to current dir:
+AJB:house Adam$ mv ./living_room/rug ./rug
+==============================
+
+==============================
+Copy Files
+==============================
+AJB:house Adam$ cp bathroom/sink kitchen/sink
+==============================
+
+
+
+
+
+
