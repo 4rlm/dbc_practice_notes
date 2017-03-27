@@ -4,7 +4,7 @@
 
 # Releases 0-4 #
 #############################
-=begin
+
 
 class Santa
     def initialize(gender, ethnicity)
