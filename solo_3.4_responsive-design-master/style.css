@@ -1,0 +1,127 @@
+/** {
+    border: 1px solid red;
+}*/
+
+
+/*Need to add 2 more media queries, then do release 3.*/
+
+body {
+    max-width: 960px;
+}
+
+blockquote {
+  border-left: 5px solid blue;
+  padding: 15px;
+  margin-left: 0px;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+}
+
+#external-links{
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+
+    /*Bonus*/
+    position: fixed;
+
+}
+
+#external-links ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+main {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+
+    /*Bonus*/
+    position: absolute;
+    left: 20%;
+}
+
+/* you're welcome to edit the
+image, figure, and figcaption CSS if you'd like,
+but it's optional! */
+img {
+  width: 100%;
+}
+
+figure {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: right;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    #external-links {
+        position: fixed;
+        max-width: 500px;
+        width: 100%;
+        margin-top: -73px;
+    }
+
+    #external-links ul {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        background-image: linear-gradient(#36b9ff, #6acbfc);
+        width: 100%;
+        position: fixed;
+    }
+
+    #external-links .active {
+        background-image: linear-gradient(#6acbfc, #85d4fc);
+        color: white;
+    }
+
+    #external-links li {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        font-weight: bold;
+        border-bottom: 1px solid #47c1ff;
+        background-image: linear-gradient(#36b9ff, #6acbfc);
+    }
+
+    #external-links li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #external-links li:hover {
+        background-image: linear-gradient(#6acbfc, #85d4fc);
+        color: #eaf8ff;
+    }
+
+    h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+
+
+    main {
+        width: 100%;
+        display: inline-block;
+        margin-top: 110px;
+        /*vertical-align: top;*/
+        position: static;
+    }
+
+}
