@@ -1,0 +1,1 @@
+".map, capitalize",puts 'one TWO three foUR'.split.map(&:capitalize).join(' ')iterate hash of a hash,"STATE_DATA.each do |state, value|    puts state    value.each do |k,v|        puts k        puts v    endend"

@@ -1,0 +1,1 @@
+bash command - basic,rspec calculator_spec.rbbash command - detail,rspec -fd calculator_spec.rbfile basics - name,calculator_spec.rbfile basics - require,require_relative 'calculator' (class name)
