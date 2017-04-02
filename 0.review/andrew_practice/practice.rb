@@ -1,16 +1,33 @@
+
+# RSpec Tips:
+# bash command - basic	rspec calculator_spec.rb
+# bash command - detail	rspec -fd calculator_spec.rb
+# file basics - name	calculator_spec.rb
+# file basics - require	require_relative 'calculator' (class name)
+############################
 h = {}
 h['a'] = 'apples'
 h[:a] = 'asparagus'
-
 my_var = 'a'
 other_var = 'b'
-
 h[my_var]
-
 h[other_var] = 'bees'
 
 #Prep: be ready to create new folder and files on desktop, git init, then have terminal ready in that folder.
 #pseudocode!
+
+# mkdir
+# cd
+# touch ...rb
+# touch ...._spec.rb
+# git init
+# git add .
+# git commit -m
+# ATOM .
+# PSEUDOCODE!!!!!
+# addy_num = addy.gsub(/[^0-9]/, "")
+# addy_text = addy.gsub(/[^A-Za-z]/, "")
+
 #git demo
 #logic and hash iteration, ex. find toy with longest length, or with most vowels, etc.
 #rspec: 2 methods
